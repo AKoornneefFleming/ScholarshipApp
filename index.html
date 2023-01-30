@@ -10,25 +10,28 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Merienda:wght@300;400;500;900&family=Syne+Mono&display=swap" rel="stylesheet"> 
 </head>
+
 <body>
 <!-- NAVBAR -->
 <div class="navbar">  
     <a class="active" href="index.html">Home</a> <!--Define which link is the active for additional styling -->
-    <a href="./databases/skills.html">Databases</a>
-    <a href="./databases/skills.html">Web Devolopment & Maps </a>
-    <a href="./databases/skills.html">Programing</a>
-    <a href="./databases/skills.html">Spatial Analysis</a>
-    <a href="./databases/skills.html">Cartography / Geovizualization</a>
-    <a href="./databases/skills.html">Remote Sensing</a>
+    <a href="#database">Databases</a>
+    <a href="#web_dev">Web Devolopment & Maps</a>
+    <a href="#programming">Programing</a>
+    <a href="#spatial">Spatial Analysis</a>
+    <a href="#cartography">Cartography / Geovizualization</a>
+    <a href="#remote_sense">Remote Sensing</a>
 </div>
 <!--/ https://www.w3schools.com/html/tryit.asp?filename=tryhtml_layout_float-->
+
 <header class="A">
     <h1>Adrian Koornneef</h1>
-    <h2>Esri Canada GIS Scholarship Award - Internal Application</h2>  
+    <h2>Esri Canada GIS Scholarship Award - Fleming Internal Application</h2>  
 </header>
+
 <section>
-    <article class = "Left"> <!--See CSS Layout details. W3schools inspired. Modified from a nav to a seperate article class*/-->
-		<div class = "IndexA"> <!--References CSS class created for this page. Similar to other page, left for sementic / organization / flexibility for changes*/-->
+    <article class = "text"> <!--See CSS Layout details. W3schools inspired. Modified from a nav to a seperate article class*/-->
+		<div class = "main"> <!--References CSS class created for this page. Similar to other page, left for sementic / organization / flexibility for changes*/-->
             <h3>My Application</h3>
 			<p>Thank you for taking the time to review my application. In 2022 and 2023, I have had the distinguished pleasure of attending Fleming College's 
                 GIS Application Specialist - Online program. The last six months has been a fascinating journey, and I'd like 
@@ -40,24 +43,147 @@
             <ul>
                 <li><a class="ext" href="https://www.chess.com/member/pragmaticnonsense">GitHub Repository</a></li>
             </ul>
-            <h4>Acknowledgements</h4>
-            <p>I'd like to acknolwedge that this journey would not have been possible if not for the diligent support of each of my professors. I have also been
-                supported by and collaborated with fellow students throughout the program. Student's names will be included for projects that work completed as a team, but I'd like to 
-                specifically call out Khazana Admadli, Lori Lowy, Janet Pratt, Ashley Allan, and Yingjia Ye, who have been particularly insturmental. I'd also like to thank my partner, who wishes to remain anonymous.</p>
+           
             <!-- <p>We don't need any guidelines or formats. All we need to do is just let it flow right out of us. Maybe he has a little friend that lives right over here. Let's have a happy little tree in here. Anyone can paint. Learn when to stop. Every highlight needs it's own personal shadow. We might as well make some Almighty mountains today as well, what the heck. This is probably the greatest thing that's ever happened in my life. Now we don't want him to get lonely, so we'll give him a little friend. Water's like me. It's laaazy ... Boy, it always looks for the easiest way to do things</p>
             <p>In your world you have total and absolute power. All you need is a dream in your heart, and an almighty knife. Very easy to work these to death. You don't have to spend all your time thinking about what you're doing, you just let it happen. Absolutely no pressure. You are just a whisper floating across a mountain. Let's get crazy. It's a super day, so why not make a beautiful sky? No pressure. Just relax and watch it happen. Isn't that fantastic? We'll put a happy little sky in here. It's all a game of angles.</p>
             <p>Didn't you know you had that much power? You can move mountains. You can do anything. We have no limits to our world. We're only limited by our imagination. Just beat the devil out of it. Almost everything is going to happen for you automatically - you don't have to spend any time working or worrying. Isn't that fantastic that you can make whole mountains in minutes? Once you learn the technique, ohhh! Turn you loose on the world; you become a tiger. It's a very cold picture, I may have to go get my coat. It’s about to freeze me to death. I really believe that if you practice enough you could paint the 'Mona Lisa' with a two-inch brush. That's crazy. Let's put some happy little bushes on the other side now.</p>
             <p>This is the way you take out your flustrations. Nice little fluffy clouds laying around in the sky being lazy. It's a good way of getting rid of all your anxieties and hostilities. Nature is so fantastic, enjoy it. Let it make you happy. We start with a vision in our heart, and we put it on canvas.</p> -->
+        </div>
+    </article>
+    <article class = "images">  <!--See CSS Layout details. W3schools inspired. Modified to a seperate article class*/ Allows for interaction and formatting split over the page-->
+        <p><img class = "Profile" src="AKprofile182x203.jpg" alt="Headshot of Adrian Koornneef"></p>  <!--image set to native resolution Alternative text. CSS applied formatting in external sheet-->
+    </article>
+</section>
+<div class = "main">
+    <h4>Acknowledgements</h4>
+    <p>I'd like to acknolwedge that this journey would not have been possible if not for the diligent support of each of my professors. I have also been
+        supported by and collaborated with fellow students throughout the program. Student's names will be included for projects that work completed as a team, but I'd like to 
+        specifically call out Khazana Admadli, Lori Lowy, Janet Pratt, Ashley Allan, and Yingjia Ye, who have been particularly insturmental. I'd also like to thank my partner, who wishes to remain anonymous.</p>
+</div>
+
+<div class = "container1">
+    <p id = "database"></p>
+    <h3>Database Management</h3>
+    <section>
+        <article class = "images">  
+            <p><img class = "thumbnails" src="./Database/SQLCodeThumbnail.png" alt="Headshot of Adrian Koornneef"></p>  
         </article>
-        <article class = "Right">  <!--See CSS Layout details. W3schools inspired. Modified to a seperate article class*/ Allows for interaction and formatting split over the page-->
-            <p><img class = "Profile" src="AKprofile182x203.jpg" alt="Headshot of Adrian Koornneef"></p>  <!--image set to native resolution Alternative text. CSS applied formatting in external sheet-->
+        <article class = "text"> 
+            <div class = "main"> 
+                <p>We don't need any guidelines or formats. All we need to do is just let it flow right out of us. Maybe he has a little friend that lives right over here. Let's have a happy little tree in here. Anyone can paint. Learn when to stop. Every highlight needs it's own personal shadow. We might as well make some Almighty mountains today as well, what the heck. This is probably the greatest thing that's ever happened in my life. Now we don't want him to get lonely, so we'll give him a little friend. Water's like me. It's laaazy ... Boy, it always looks for the easiest way to do things</p>
+                <p>In your world you have total and absolute power. All you need is a dream in your heart, and an almighty knife. Very easy to work these to death. You don't have to spend all your time thinking about what you're doing, you just let it happen. Absolutely no pressure. You are just a whisper floating across a mountain. Let's get crazy. It's a super day, so why not make a beautiful sky? No pressure. Just relax and watch it happen. Isn't that fantastic? We'll put a happy little sky in here. It's all a game of angles.</p>
+            </div>
         </article>
+    </section>
+    <div class = "main">
+        <p>Didn't you know you had that much power? You can move mountains. You can do anything. We have no limits to our world. We're only limited by our imagination. Just beat the devil out of it. Almost everything is going to happen for you automatically - you don't have to spend any time working or worrying. Isn't that fantastic that you can make whole mountains in minutes? Once you learn the technique, ohhh! Turn you loose on the world; you become a tiger. It's a very cold picture, I may have to go get my coat. It’s about to freeze me to death. I really believe that if you practice enough you could paint the 'Mona Lisa' with a two-inch brush. That's crazy. Let's put some happy little bushes on the other side now.</p>
+        <p>This is the way you take out your flustrations. Nice little fluffy clouds laying around in the sky being lazy. It's a good way of getting rid of all your anxieties and hostilities. Nature is so fantastic, enjoy it. Let it make you happy. We start with a vision in our heart, and we put it on canvas.</p>
+    </div>
+</div>
+
+<div class = "container2">
+    <p id = "web_dev"></p>
+    <h5>Web Development and Web Maps</h5>
+    <section>
+        <article class = "text"> 
+            <div class = "main"> 
+                <p>We don't need any guidelines or formats. All we need to do is just let it flow right out of us. Maybe he has a little friend that lives right over here. Let's have a happy little tree in here. Anyone can paint. Learn when to stop. Every highlight needs it's own personal shadow. We might as well make some Almighty mountains today as well, what the heck. This is probably the greatest thing that's ever happened in my life. Now we don't want him to get lonely, so we'll give him a little friend. Water's like me. It's laaazy ... Boy, it always looks for the easiest way to do things</p>
+                <p>In your world you have total and absolute power. All you need is a dream in your heart, and an almighty knife. Very easy to work these to death. You don't have to spend all your time thinking about what you're doing, you just let it happen. Absolutely no pressure. You are just a whisper floating across a mountain. Let's get crazy. It's a super day, so why not make a beautiful sky? No pressure. Just relax and watch it happen. Isn't that fantastic? We'll put a happy little sky in here. It's all a game of angles.</p>
+            </div>
+            </article>
+        <article class = "images">  
+            <p><img class = "thumbnails" src="./Database/SQLCodeThumbnail.png" alt="Headshot of Adrian Koornneef"></p> 
+        </article>
+    </section>
+    <div class = "main">
+        <p>Didn't you know you had that much power? You can move mountains. You can do anything. We have no limits to our world. We're only limited by our imagination. Just beat the devil out of it. Almost everything is going to happen for you automatically - you don't have to spend any time working or worrying. Isn't that fantastic that you can make whole mountains in minutes? Once you learn the technique, ohhh! Turn you loose on the world; you become a tiger. It's a very cold picture, I may have to go get my coat. It’s about to freeze me to death. I really believe that if you practice enough you could paint the 'Mona Lisa' with a two-inch brush. That's crazy. Let's put some happy little bushes on the other side now.</p>
+        <p>This is the way you take out your flustrations. Nice little fluffy clouds laying around in the sky being lazy. It's a good way of getting rid of all your anxieties and hostilities. Nature is so fantastic, enjoy it. Let it make you happy. We start with a vision in our heart, and we put it on canvas.</p>
+        <p>Didn't you know you had that much power? You can move mountains. You can do anything. We have no limits to our world. We're only limited by our imagination. Just beat the devil out of it. Almost everything is going to happen for you automatically - you don't have to spend any time working or worrying. Isn't that fantastic that you can make whole mountains in minutes? Once you learn the technique, ohhh! Turn you loose on the world; you become a tiger. It's a very cold picture, I may have to go get my coat. It’s about to freeze me to death. I really believe that if you practice enough you could paint the 'Mona Lisa' with a two-inch brush. That's crazy. Let's put some happy little bushes on the other side now.</p>
+        <p>Didn't you know you had that much power? You can move mountains. You can do anything. We have no limits to our world. We're only limited by our imagination. Just beat the devil out of it. Almost everything is going to happen for you automatically - you don't have to spend any time working or worrying. Isn't that fantastic that you can make whole mountains in minutes? Once you learn the technique, ohhh! Turn you loose on the world; you become a tiger. It's a very cold picture, I may have to go get my coat. It’s about to freeze me to death. I really believe that if you practice enough you could paint the 'Mona Lisa' with a two-inch brush. That's crazy. Let's put some happy little bushes on the other side now.</p>
+    </div>
+</div>
 
 
+<div class = "container1">
+    <p id = "programming"></p>
+    <h3>Programming</h3>
+    <section>
+        <article class = "images">  
+            <p><img class = "thumbnails" src="./Database/SQLCodeThumbnail.png" alt="Headshot of Adrian Koornneef"></p>  
+        </article>
+        <article class = "text"> 
+            <div class = "main"> 
+                <p>We don't need any guidelines or formats. All we need to do is just let it flow right out of us. Maybe he has a little friend that lives right over here. Let's have a happy little tree in here. Anyone can paint. Learn when to stop. Every highlight needs it's own personal shadow. We might as well make some Almighty mountains today as well, what the heck. This is probably the greatest thing that's ever happened in my life. Now we don't want him to get lonely, so we'll give him a little friend. Water's like me. It's laaazy ... Boy, it always looks for the easiest way to do things</p>
+                <p>In your world you have total and absolute power. All you need is a dream in your heart, and an almighty knife. Very easy to work these to death. You don't have to spend all your time thinking about what you're doing, you just let it happen. Absolutely no pressure. You are just a whisper floating across a mountain. Let's get crazy. It's a super day, so why not make a beautiful sky? No pressure. Just relax and watch it happen. Isn't that fantastic? We'll put a happy little sky in here. It's all a game of angles.</p>
+            </div>
+        </article>
+    </section>
+    <div class = "main">
+        <p>Didn't you know you had that much power? You can move mountains. You can do anything. We have no limits to our world. We're only limited by our imagination. Just beat the devil out of it. Almost everything is going to happen for you automatically - you don't have to spend any time working or worrying. Isn't that fantastic that you can make whole mountains in minutes? Once you learn the technique, ohhh! Turn you loose on the world; you become a tiger. It's a very cold picture, I may have to go get my coat. It’s about to freeze me to death. I really believe that if you practice enough you could paint the 'Mona Lisa' with a two-inch brush. That's crazy. Let's put some happy little bushes on the other side now.</p>
+        <p>This is the way you take out your flustrations. Nice little fluffy clouds laying around in the sky being lazy. It's a good way of getting rid of all your anxieties and hostilities. Nature is so fantastic, enjoy it. Let it make you happy. We start with a vision in our heart, and we put it on canvas.</p>
+    </div>
+</div>
 
 
+<div class = "container2">
+    <p id = "spatial"></p>
+    <h5>Spatial Analysis</h5>
+    <section>
+        <article class = "text"> 
+            <div class = "main"> 
+                <p>We don't need any guidelines or formats. All we need to do is just let it flow right out of us. Maybe he has a little friend that lives right over here. Let's have a happy little tree in here. Anyone can paint. Learn when to stop. Every highlight needs it's own personal shadow. We might as well make some Almighty mountains today as well, what the heck. This is probably the greatest thing that's ever happened in my life. Now we don't want him to get lonely, so we'll give him a little friend. Water's like me. It's laaazy ... Boy, it always looks for the easiest way to do things</p>
+                <p>In your world you have total and absolute power. All you need is a dream in your heart, and an almighty knife. Very easy to work these to death. You don't have to spend all your time thinking about what you're doing, you just let it happen. Absolutely no pressure. You are just a whisper floating across a mountain. Let's get crazy. It's a super day, so why not make a beautiful sky? No pressure. Just relax and watch it happen. Isn't that fantastic? We'll put a happy little sky in here. It's all a game of angles.</p>
+            </div>
+            </article>
+        <article class = "images">  
+            <p><img class = "thumbnails" src="./Database/SQLCodeThumbnail.png" alt="Headshot of Adrian Koornneef"></p> 
+        </article>
+    </section>
+    <div class = "main">
+        <p>Didn't you know you had that much power? You can move mountains. You can do anything. We have no limits to our world. We're only limited by our imagination. Just beat the devil out of it. Almost everything is going to happen for you automatically - you don't have to spend any time working or worrying. Isn't that fantastic that you can make whole mountains in minutes? Once you learn the technique, ohhh! Turn you loose on the world; you become a tiger. It's a very cold picture, I may have to go get my coat. It’s about to freeze me to death. I really believe that if you practice enough you could paint the 'Mona Lisa' with a two-inch brush. That's crazy. Let's put some happy little bushes on the other side now.</p>
+        <p>This is the way you take out your flustrations. Nice little fluffy clouds laying around in the sky being lazy. It's a good way of getting rid of all your anxieties and hostilities. Nature is so fantastic, enjoy it. Let it make you happy. We start with a vision in our heart, and we put it on canvas.</p>
+    </div>
+</div>
 
 
+<div class = "container1">
+    <p id = "cartography"></p>
+    <h3>Cartography / Geovizualization</h3>
+    <section>
+        <article class = "images">  
+            <p><img class = "thumbnails" src="./Database/SQLCodeThumbnail.png" alt="Headshot of Adrian Koornneef"></p>  
+        </article>
+        <article class = "text"> 
+            <div class = "main"> 
+                <p>We don't need any guidelines or formats. All we need to do is just let it flow right out of us. Maybe he has a little friend that lives right over here. Let's have a happy little tree in here. Anyone can paint. Learn when to stop. Every highlight needs it's own personal shadow. We might as well make some Almighty mountains today as well, what the heck. This is probably the greatest thing that's ever happened in my life. Now we don't want him to get lonely, so we'll give him a little friend. Water's like me. It's laaazy ... Boy, it always looks for the easiest way to do things</p>
+                <p>In your world you have total and absolute power. All you need is a dream in your heart, and an almighty knife. Very easy to work these to death. You don't have to spend all your time thinking about what you're doing, you just let it happen. Absolutely no pressure. You are just a whisper floating across a mountain. Let's get crazy. It's a super day, so why not make a beautiful sky? No pressure. Just relax and watch it happen. Isn't that fantastic? We'll put a happy little sky in here. It's all a game of angles.</p>
+            </div>
+        </article>
+    </section>
+    <div class = "main">
+        <p>Didn't you know you had that much power? You can move mountains. You can do anything. We have no limits to our world. We're only limited by our imagination. Just beat the devil out of it. Almost everything is going to happen for you automatically - you don't have to spend any time working or worrying. Isn't that fantastic that you can make whole mountains in minutes? Once you learn the technique, ohhh! Turn you loose on the world; you become a tiger. It's a very cold picture, I may have to go get my coat. It’s about to freeze me to death. I really believe that if you practice enough you could paint the 'Mona Lisa' with a two-inch brush. That's crazy. Let's put some happy little bushes on the other side now.</p>
+        <p>This is the way you take out your flustrations. Nice little fluffy clouds laying around in the sky being lazy. It's a good way of getting rid of all your anxieties and hostilities. Nature is so fantastic, enjoy it. Let it make you happy. We start with a vision in our heart, and we put it on canvas.</p>
+    </div>
+</div>
 
+<div class = "container2">
+    <p id = "remote_sense"></p>
+    <h5>Remote Sensing</h5>
+    <section>
+        <article class = "text"> 
+            <div class = "main"> 
+                <p>We don't need any guidelines or formats. All we need to do is just let it flow right out of us. Maybe he has a little friend that lives right over here. Let's have a happy little tree in here. Anyone can paint. Learn when to stop. Every highlight needs it's own personal shadow. We might as well make some Almighty mountains today as well, what the heck. This is probably the greatest thing that's ever happened in my life. Now we don't want him to get lonely, so we'll give him a little friend. Water's like me. It's laaazy ... Boy, it always looks for the easiest way to do things</p>
+                <p>In your world you have total and absolute power. All you need is a dream in your heart, and an almighty knife. Very easy to work these to death. You don't have to spend all your time thinking about what you're doing, you just let it happen. Absolutely no pressure. You are just a whisper floating across a mountain. Let's get crazy. It's a super day, so why not make a beautiful sky? No pressure. Just relax and watch it happen. Isn't that fantastic? We'll put a happy little sky in here. It's all a game of angles.</p>
+            </div>
+            </article>
+        <article class = "images">  
+            <p><img class = "thumbnails" src="./Database/SQLCodeThumbnail.png" alt="Headshot of Adrian Koornneef"></p> 
+        </article>
+    </section>
+    <div class = "main">
+        <p>Didn't you know you had that much power? You can move mountains. You can do anything. We have no limits to our world. We're only limited by our imagination. Just beat the devil out of it. Almost everything is going to happen for you automatically - you don't have to spend any time working or worrying. Isn't that fantastic that you can make whole mountains in minutes? Once you learn the technique, ohhh! Turn you loose on the world; you become a tiger. It's a very cold picture, I may have to go get my coat. It’s about to freeze me to death. I really believe that if you practice enough you could paint the 'Mona Lisa' with a two-inch brush. That's crazy. Let's put some happy little bushes on the other side now.</p>
+        <p>This is the way you take out your flustrations. Nice little fluffy clouds laying around in the sky being lazy. It's a good way of getting rid of all your anxieties and hostilities. Nature is so fantastic, enjoy it. Let it make you happy. We start with a vision in our heart, and we put it on canvas.</p>
+    </div>
+</div>
 </body>
 </html>

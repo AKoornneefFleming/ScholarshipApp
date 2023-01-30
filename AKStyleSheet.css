@@ -45,6 +45,14 @@ h4 {
     font-weight: 500;
     font-family: 'Merienda', cursive;
 }
+
+h5 {
+	font-size: 24px; 
+	color: #F2A74F;
+    font-weight: 500;
+    font-family: 'Merienda', cursive;
+	text-align: right;
+}
 /*All font should be white by default because of dark back ground*/
 * p {
 	color: white;
@@ -57,7 +65,18 @@ h4 {
 	padding: 5px;
 }
 
-
+/***********************Lists Styling**********************/
+/* https://www.w3schools.com/css/tryit.asp?filename=trycss_list-style_colors */
+/* https://www.w3schools.com/css/css_list.asp*/
+/*Organized list, original inspiration from w3schools CSS - Lists*/
+/*Organized list was also used to differentiate from external link lists without the use of a class, as 
+experiencing extensive issues with applying list classes during development. Originally overcome, but kept styling here*/
+ol li {
+	list-style-type:circle;
+	font-family: 'Syne Mono', monospace;
+	color: white;
+	padding: 5px;
+}
 /***********************NavBar**********************/
 /* https://www.w3schools.com/howto/howto_js_tabs.asp */
 /*Functionality inspired by w3schools, formatting changes applied*/
@@ -130,35 +149,56 @@ a.ext:hover { /*Hover element highly modified to hover links to distinguish from
 /* Link Option End*/
 /***********************Div Classes**********************/
 /*Main container style class applied to Index*/
-div.IndexA  {
+div.main  {
 	padding: 5px; /*General spacing formatting*/
 	margin: 5px; /*General spacing formatting*/
 	margin-left: 10px;
 }
 /*Secondary container style class applied to about me section of index page to limit extent of this section on the right */
-div.IndexB  {
+div.topspace  {
 	padding: 5px;
 	margin-left: 5px;
 	margin-right: 35px;
+	margin-top: 90px;
+}
+
+div.container1  {
+	padding: 10px;
+	margin-left: 5px;
+	margin-top: 85px;
+	background-image: linear-gradient(to bottom right, rgba(94, 94, 94, .5),rgb(29, 29, 29, 1)); /*w3schools - css gradients */
+	border-color: black;
+	border-radius: 15px; /*border shaping of header*/ 
+	border: 1px solid black; /*basic formatting*/ 
+}
+
+div.container2  {
+	padding: 10px;
+	margin-left: 5px;
+	margin-top: 85px;
+	background-image: linear-gradient(to bottom left, rgba(94, 94, 94, .5),rgb(29, 29, 29, 1)); /*w3schools - css gradients */
+	border-color: black;
+	border-radius: 15px; /*border shaping of header*/ 
+ 	border: 1px solid black; /*basic formatting*/ 
 }
 
 /***********************IMAGE Formatting********************/
 /* Image Option Begin*/
 /*image class for profile pics. Itend to use in CV section once developed, why it's not an ID selector.*/
 img.Profile {
-	max-width: 230px; /*Image native resolution*/
-	max-height: 288px; /*Image native resolution*/
+	max-width: 182px; /*Image native resolution*/
+	max-height: 203px; /*Image native resolution*/
 	border-radius: 25px; /*Match border rounding throughout site*/
 	border: 3px solid black; /*basic formatting*/
 	margin-left: 25px; /*provide spacing around photo sides without interrupting header*/
-	margin-right: 25px; /*provide spacing around photo sides without interrupting header*/
+	margin-right: 10px; /*provide spacing around photo sides without interrupting header*/
 }
 /*image class that represent smaller versions of images in image gallery .*/
 img.thumbnails {
-	border-radius: 5px;
-	border: 1px solid black;
-	margin-left: auto;
-	margin-right: auto;
+	border-radius: 25px; /*Match border rounding throughout site*/
+	border: 3px solid black; /*basic formatting*/
+	margin-left: 25px; /*provide spacing around photo sides without interrupting header*/
+	margin-right: 10px; /*provide spacing around photo sides without interrupting header*/
 }
 /***********************IMAGE GALLERY********************/
 /* https://www.w3schools.com/css/css_image_gallery.asp */
@@ -199,13 +239,13 @@ section {
   display: flex; /*not changed from source */
 }
 /* Style the content */
-article.Left { /*changed from nav bar to another article, seperated into class as .Left */
+article.text { /*changed from nav bar to another article, seperated into class as .Left */
   -webkit-flex: 5; /*changed these numbers in attempt to manage spacing with various degrees of success */
   -ms-flex: 5; /*changed these numbers in attempt to manage spacing with various degrees of success */
   flex: 5; /*changed these numbers in attempt to manage spacing with various degrees of success */
   }
 /* Style the content */
-article.Right { /*Seperated into class as .Right as 2nd article was created instead of keeping a navbar */
+article.images { /*Seperated into class as .Right as 2nd article was created instead of keeping a navbar */
   -webkit-flex: 1; /*changed these numbers in attempt to manage spacing with various degrees of success */
   -ms-flex: 1; /*changed these numbers in attempt to manage spacing with various degrees of success */
   flex: 1; /*changed these numbers in attempt to manage spacing with various degrees of success */
