@@ -169,7 +169,7 @@ div.main  {
 	padding: 5px; /*General spacing formatting*/
 	margin: 5px; /*General spacing formatting*/
 	margin-left: 10px;
-	width:1300px;
+	max-width:900px;
 	background-color: rgb(51, 48, 48);
 	border-radius: 15px; /*border shaping of header*/ 
 	border: 3px solid black; /*basic formatting*/ 
