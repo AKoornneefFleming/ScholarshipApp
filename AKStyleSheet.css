@@ -7,6 +7,7 @@
 body{
 	background-color: #262421;
 }
+
 /***********************Fonts**********************/
 /*Use for primary header, both pages*/ 
 h1 {
@@ -71,12 +72,14 @@ h5 {
 /*Organized list, original inspiration from w3schools CSS - Lists*/
 /*Organized list was also used to differentiate from external link lists without the use of a class, as 
 experiencing extensive issues with applying list classes during development. Originally overcome, but kept styling here*/
-ol li {
+
+/* b li {
 	list-style-type:circle;
 	font-family: 'Syne Mono', monospace;
 	color: white;
 	padding: 5px;
-}
+	 */
+
 /***********************NavBar**********************/
 /* https://www.w3schools.com/howto/howto_js_tabs.asp */
 /*Functionality inspired by w3schools, formatting changes applied*/
@@ -124,11 +127,13 @@ ul {
 	list-style-type: none;  /*remove bulletpoints*/
 	margin: 5px; /*basic formatting*/
 	padding: 5px; /*basic formatting*/
+	margin-top: 50px;
 }
 /* list link elements within the parent unorganized list element above*/
 li a {
-	display: block; /*prevents listed links from overlapping each other*/
-    text-align: center;
+	/* display: block; prevents listed links from overlapping each other */
+    list-style-type: none;  /*remove bulletpoints*/
+	text-align: center;
 	border-radius: 25px; /*formatting to match page style*/
 	padding: 15px; /*define weight and size of the list elements*/
 	border: 1px solid black; /*basic formatting*/
@@ -137,6 +142,7 @@ li a {
 	color: white; /*basic styling*/
 	text-decoration: none; /*remove underline*/
 	font-weight: bold; /*add weight to text*/
+	margin-top: 25px;
 }
 /* Begin external link specific class*/
 a.ext:link {color: white;} /* Basic structure for non-hovered links as style provided in list element */
@@ -149,10 +155,33 @@ a.ext:hover { /*Hover element highly modified to hover links to distinguish from
 /* Link Option End*/
 /***********************Div Classes**********************/
 /*Main container style class applied to Index*/
+
+div.centered {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+	min-height: 100vh;
+	
+  }
+
 div.main  {
 	padding: 5px; /*General spacing formatting*/
 	margin: 5px; /*General spacing formatting*/
 	margin-left: 10px;
+	width:1300px;
+	background-color: rgb(51, 48, 48);
+	border-radius: 15px; /*border shaping of header*/ 
+	border: 3px solid black; /*basic formatting*/ 
+	border-style: groove;
+
+}
+
+div.main2  {
+	padding: 5px; /*General spacing formatting*/
+	margin: 5px; /*General spacing formatting*/
+	margin-left: 10px;
+	/* width: 1300px; */
 }
 /*Secondary container style class applied to about me section of index page to limit extent of this section on the right */
 div.topspace  {
@@ -166,10 +195,6 @@ div.container1  {
 	padding: 10px;
 	margin-left: 5px;
 	margin-top: 85px;
-	background-image: linear-gradient(to bottom right, rgba(94, 94, 94, .5),rgb(29, 29, 29, 1)); /*w3schools - css gradients */
-	border-color: black;
-	border-radius: 15px; /*border shaping of header*/ 
-	border: 1px solid black; /*basic formatting*/ 
 }
 
 div.container2  {
