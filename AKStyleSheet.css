@@ -174,8 +174,6 @@ div.main  {
 	background-color: rgb(51, 48, 48);
 	border-radius: 15px; /*border shaping of header*/ 
 	border: 3px solid black; /*basic formatting*/ 
-	border-style: groove;
-
 }
 
 div.main2  {
@@ -225,6 +223,7 @@ img.thumbnails {
 	border: 3px solid black; /*basic formatting*/
 	margin-left: 25px; /*provide spacing around photo sides without interrupting header*/
 	margin-right: 10px; /*provide spacing around photo sides without interrupting header*/
+	max-width: 95%
 }
 /***********************IMAGE GALLERY********************/
 /* https://www.w3schools.com/css/css_image_gallery.asp */
