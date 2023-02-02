@@ -15,84 +15,98 @@ h1 {
 	color: white;
 	text-align: center;
     font-weight: 900;
-	/* text-decoration-line: underline; */
-	/* text-decoration-color: #F2A74F; */
     font-family: 'Merienda', cursive;
-	/* font-family: Papyrus, Fantasy, Helvetica, sans-serif;   Additional options provided in case of browser compatibility issues */
+	text-shadow: 2px 2px black;
 }
 
+/*Thinner version of H1 - subheader*/ 
 h2 {
 	font-size: 32px; 
 	color: white;
 	text-align: center;
     font-weight: 400;
-	/* text-decoration-line: underline;
-	text-decoration-color: #F2A74F; */
     font-family: 'Merienda', cursive;
-
+	text-shadow: 2px 2px black;
 }
 
-    /*Contrasting sub-header, used on both pages two seperate major sections of the page*/
+/*Gold Cursive -- Section Headers */
 h3 {
-	font-size: 24px; 
+	font-size: 32px; 
 	color: #F2A74F;
     font-weight: 500;
     font-family: 'Merienda', cursive;
+	text-shadow: 2px 2px black;
 }
 
+/*Smaller White -- Course Names */
 h4 {
-	font-size: 24px; 
+	font-size: 22px; 
 	color: white;
     font-weight: 500;
     font-family: 'Merienda', cursive;
+	text-shadow: 2px 2px black;
 }
 
+/*Smaller White -- Section Sub Headers */
 h5 {
-	font-size: 24px; 
-	color: #F2A74F;
-    font-weight: 500;
-    font-family: 'Merienda', cursive;
-	text-align: right;
+	font-size: 20px; 
+	color: white;
+    font-weight: 750;
+    font-family: 'Syne Mono', monospace;
+	text-shadow: 2px 2px black;
 }
-/*All font should be white by default because of dark back ground*/
+
 * p {
 	color: white;
-    font-family: 'Syne Mono', monospace
+    font-family: 'Syne Mono', monospace;
+	text-shadow: 2px 2px black;
 }
-/*To add some funk to the landing page and visually seperate text sections*/
-/*modified from w3schools border page, and changed from a class to an ID as it is only use, added padding to de-clutter*/
-#pgroove {
-	border-style: groove; 
+
+
+
+/***********************Div Classes**********************/
+
+/*Main content centered w/in this box*/
+div.center_main_box {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+	min-height: 100vh;
+  }
+
+  /*Formatting the centered box - all content should fall w/in this div*/
+div.main  {
+	padding: 5px; 
+	margin: 5px; 
+	margin-left: 10px;
+	width: 80%;
+	max-width:900px;
+	background-color: rgb(51, 48, 48);
+	border-radius: 15px; /*border shaping of header*/ 
+	border: 1.5mm ridge rgba(29, 28, 27, 0.6) 
+}
+
+div.gen_div  {
+	margin: 5px;
 	padding: 5px;
 }
 
-/***********************Lists Styling**********************/
-/* https://www.w3schools.com/css/tryit.asp?filename=trycss_list-style_colors */
-/* https://www.w3schools.com/css/css_list.asp*/
-/*Organized list, original inspiration from w3schools CSS - Lists*/
-/*Organized list was also used to differentiate from external link lists without the use of a class, as 
-experiencing extensive issues with applying list classes during development. Originally overcome, but kept styling here*/
+div.title_section  {
+	margin: 5px; /*General spacing formatting*/
+	margin-top: 100px;
+}
 
-/* b li {
-	list-style-type:circle;
-	font-family: 'Syne Mono', monospace;
-	color: white;
-	padding: 5px;
-	 */
+
 
 /***********************NavBar**********************/
 /* https://www.w3schools.com/howto/howto_js_tabs.asp */
-/*Functionality inspired by w3schools, formatting changes applied*/
-/*Adding style the top navigation*/
-/*NAVBAR for both pages*/
-/*Functionality inspired by w3schools, formatting changes applied*/
-/*Menus/Navigation bars Option Begin*/
-/*<!--Menus/Navigation bars Option Begin -->*/
+
+
 #navbar {
-	border-radius: 15px;  /*Rounding affect added to navbar, matching to other page elements*/
-	background-color: #4B028C; /*Purple background colour added to match general page style*/
-	/* overflow: hidden;  Prevents other elements (i.e. the header) from overlapping */
-	border: 1px solid black; /*additional styling element*/
+	background-color: #4B028C; 
+	overflow: hidden;  
+	border: 1px solid black; 
 	position: fixed;
 	width: 100%;
 	top: -50px;
@@ -101,26 +115,28 @@ experiencing extensive issues with applying list classes during development. Ori
 }
 /*styling the links within the nav bar*/
 #navbar a{
-	float: left; /*formatting spacing*/
-	color: #F2A74F; /*font color to match page accents*/
-	text-align: center; /*formating, center align text*/
-	padding: 16px; /*applying padding according to page styling*/
-	text-decoration: none;  /*removing underline*/
-	font-weight: bold; /*styling, add visiual weight*/
-	font-size: 17px;  /*styling, to match formatting of the page*/
+	float: left; 
+	color: white; 
+	text-align: center; 
+	padding: 16px; 
+	text-decoration: none;  
+	font-weight: bold; 
+	font-size: 17px;  
     font-family: 'Syne Mono', monospace;
 	display: block;
+	text-shadow: 2px 2px black
 }
 /* Change the color of links on hover */
 #navbar a:hover {
   background-color: #7FA650; /*hover colour matches accent colour formatting of page*/
-  color: black; 
+  color: white; 
   font-family: 'Syne Mono', monospace; /*changes font style hovering */
   align-content: center;
  }
 
 
-/* Style the header */
+/********************** HEADER **********************/
+
 header.A {
 	background-color: #777; /*For browsers that do not support gradients */
 	background-image: linear-gradient(to bottom right, rgba(94, 94, 94, 0),rgb(29, 29, 29, 1)); /*w3schools - css gradients */
@@ -130,164 +146,60 @@ header.A {
 	text-align: center; /*center-align the header text*/ 
 	margin: 20px; /*space formatting */
 	margin-top: 30px;
-	border: 2.5mm ridge rgba(238, 120, 3, 0.3) 
+	border: 1.5mm ridge rgba(20, 20, 19, 0.9) 
   }
 
-/* Menus/Navigation bars End*/
-/*<!--Menus/Navigation bars Option End -->*/
+
+
 /***********************EXTERNAL LINK STYLING**********************/
-/* Link Option Begin*/
 /* https://www.w3schools.com/css/tryit.asp?filename=trycss_navbar_vertical_active*/ 
 /* https://www.w3schools.com/css/tryit.asp?filename=trycss_link2 */
-/* Styling of external links is split between unorganized lists and seperate external link selector class.*/
-/* Styling unorganized list elements*/
+
 ul {
 	list-style-type: none;  /*remove bulletpoints*/
-	margin: 5px; /*basic formatting*/
-	padding: 5px; /*basic formatting*/
+	margin: 5px; 
+	padding: 5px; 
 	margin-top: 50px;
 }
 /* list link elements within the parent unorganized list element above*/
 li a {
-	/* display: block; prevents listed links from overlapping each other */
-    list-style-type: none;  /*remove bulletpoints*/
+    list-style-type: none;  
 	text-align: center;
-	border-radius: 25px; /*formatting to match page style*/
-	padding: 15px; /*define weight and size of the list elements*/
-	border: 1px solid black; /*basic formatting*/
+	border-radius: 25px; 
+	padding: 15px; 
+	border: 2px solid black; 
 	width: 225px;
-	background-color: #7FA650; /*match accent colour of page style theme*/
-	color: white; /*basic styling*/
-	text-decoration: none; /*remove underline*/
-	font-weight: bold; /*add weight to text*/
+	background-color: #7FA650; 
+	color: rgb(221, 219, 219); 
+	text-decoration: none; 
+	font-weight: bold; 
 	margin-top: 25px;
-}
-/* Begin external link specific class*/
-a.ext:link {color: white;} /* Basic structure for non-hovered links as style provided in list element */
-a.ext:visited {color: white;} /* Basic structure for non-hovered links as style provided in list element */
-a.ext:hover { /*Hover element highly modified to hover links to distinguish from formatting provided from lists */
-	/* font-family: monospace; matches accent text style on page */
-	color: #F2A74F;	 /*page accent colour*/
-	background-color: #4B028C; /*page accent colour*/
-}
-/* Link Option End*/
-/***********************Div Classes**********************/
-/*Main container style class applied to Index*/
-
-div.centered {
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	text-align: center;
-	min-height: 100vh;
-	
-  }
-
-div.main  {
-	padding: 5px; /*General spacing formatting*/
-	margin: 5px; /*General spacing formatting*/
-	margin-left: 10px;
-	width: 80%;
-	max-width:900px;
-	background-color: rgb(51, 48, 48);
-	border-radius: 15px; /*border shaping of header*/ 
-	border: 1.5mm ridge rgba(29, 28, 27, 0.6) 
+	text-shadow: .5px 1px black;
 }
 
-div.main2  {
-	padding: 5px; /*General spacing formatting*/
-	margin: 5px; /*General spacing formatting*/
-	margin-left: 10px;
-	/* width: 1300px; */
-}
-/*Secondary container style class applied to about me section of index page to limit extent of this section on the right */
-div.topspace  {
-	padding: 5px;
-	margin-left: 5px;
-	margin-right: 35px;
-	margin-top: 90px;
+/* When the mouse is hovering over a link in the navbar*/
+a.ext:link {color: white;} 
+a.ext:hover {
+	color: #F2A74F;	
+	background-color: #4B028C; 
 }
 
-div.container1  {
-	padding: 10px;
-	margin-left: 5px;
-	margin-top: 85px;
-}
-
-div.container2  {
-	padding: 10px;
-	margin-left: 5px;
-	margin-top: 85px;
-	background-image: linear-gradient(to bottom left, rgba(94, 94, 94, .5),rgb(29, 29, 29, 1)); /*w3schools - css gradients */
-	border-color: black;
-	border-radius: 15px; /*border shaping of header*/ 
- 	border: 1px solid black; /*basic formatting*/ 
-}
 
 /***********************IMAGE Formatting********************/
-/* Image Option Begin*/
-/*image class for profile pics. Itend to use in CV section once developed, why it's not an ID selector.*/
+
 img.Profile {
-	max-width: 182px; /*Image native resolution*/
-	max-height: 203px; /*Image native resolution*/
-	border-radius: 25px; /*Match border rounding throughout site*/
-	border: 3px solid black; /*basic formatting*/
-	margin-left: 25px; /*provide spacing around photo sides without interrupting header*/
-	margin-right: 10px; /*provide spacing around photo sides without interrupting header*/
+	max-width: 182px; 
+	max-height: 203px; 
+	border-radius: 100px; 
+	border: 3px solid black; 
+	margin-left: 25px; 
+	margin-right: 10px; 
 }
 /*image class that represent smaller versions of images in image gallery .*/
-img.thumbnails {
-	border-radius: 25px; /*Match border rounding throughout site*/
-	border: 3px solid black; /*basic formatting*/
-	margin-left: 25px; /*provide spacing around photo sides without interrupting header*/
-	margin-right: 10px; /*provide spacing around photo sides without interrupting header*/
-	max-width: 95%
-}
-/***********************IMAGE GALLERY********************/
-/* https://www.w3schools.com/css/css_image_gallery.asp */
-/* https://www.w3schools.com/css/css3_gradients.asp */
-/*Functionality started with W3Schools. Experienced issues and simplified taken only basic elements*/
-div.GallerySection { /*define container with a div class*/
-	max-width: 1800px; /*Visually more appealing then extending all the way to the right, expecionally on wider screens*/
-	border: 2px ridge #F2A74F; /*Accent border hilighting*/
-	background-image: linear-gradient(to right, rgba(75,2,140,0), rgba(75,2,140,1)); /*div formatting with transparecny gradient*/
-	padding: 10px;
-}
-/* Image Option End*/
-/***********************Layout**********************/
-/*https://www.w3schools.com/html/tryit.asp?filename=tryhtml_layout_float*/
-/*https://www.w3schools.com/html/tryit.asp?filename=tryhtml_layout_flexbox*/
-/* https://www.w3schools.com/css/css3_gradients.asp */
-/*Functionality heavily leverage w3schools.*/
-/* Allows for header to sit on the top, and 
-two sections to sit side-by-side underneath, and then a final section below (not a footer). 
-This allowed for a centered header, and for profile pic to float on the right of the page without overlapping or 
-severe issues with scaling down. If screen scales down, the sections cascade*/
-* {
-  box-sizing: border-box; /**w3schools, see layout section at bottom*/
+img.port_photos {
+	border-radius: 25px; 
+	border: 2px solid black; 
+	max-width: 100%;
+	margin-top: 25px;
 }
 
-/* Container for flexboxes */
-section {
-  display: -webkit-flex;  /*not changed from source */
-  display: flex; /*not changed from source */
-}
-/* Style the content */
-article.text { /*changed from nav bar to another article, seperated into class as .Left */
-  -webkit-flex: 5; /*changed these numbers in attempt to manage spacing with various degrees of success */
-  -ms-flex: 5; /*changed these numbers in attempt to manage spacing with various degrees of success */
-  flex: 5; /*changed these numbers in attempt to manage spacing with various degrees of success */
-  }
-/* Style the content */
-article.images { /*Seperated into class as .Right as 2nd article was created instead of keeping a navbar */
-  -webkit-flex: 1; /*changed these numbers in attempt to manage spacing with various degrees of success */
-  -ms-flex: 1; /*changed these numbers in attempt to manage spacing with various degrees of success */
-  flex: 1; /*changed these numbers in attempt to manage spacing with various degrees of success */
-}
-/* Responsive layout - makes the menu and the content (inside the section) sit on top of each other instead of next to each other */
-@media (max-width: 500px) { /*Set maximum width before collapses sections*/
-  section { /*not changed from source */
-    -webkit-flex-direction: column; /*not changed from source */
-    flex-direction: column; /*not changed from source */
-}
-}
