@@ -88,14 +88,19 @@ experiencing extensive issues with applying list classes during development. Ori
 /*Functionality inspired by w3schools, formatting changes applied*/
 /*Menus/Navigation bars Option Begin*/
 /*<!--Menus/Navigation bars Option Begin -->*/
-.navbar {
+#navbar {
 	border-radius: 15px;  /*Rounding affect added to navbar, matching to other page elements*/
 	background-color: #4B028C; /*Purple background colour added to match general page style*/
-	overflow: hidden;  /*Prevents other elements (i.e. the header) from overlapping*/
+	/* overflow: hidden;  Prevents other elements (i.e. the header) from overlapping */
 	border: 1px solid black; /*additional styling element*/
+	position: fixed;
+	width: 100%;
+	top: -50px;
+	display: block;
+	transition: top 0.3s;
 }
 /*styling the links within the nav bar*/
-.navbar a{
+#navbar a{
 	float: left; /*formatting spacing*/
 	color: #F2A74F; /*font color to match page accents*/
 	text-align: center; /*formating, center align text*/
@@ -104,17 +109,30 @@ experiencing extensive issues with applying list classes during development. Ori
 	font-weight: bold; /*styling, add visiual weight*/
 	font-size: 17px;  /*styling, to match formatting of the page*/
     font-family: 'Syne Mono', monospace;
+	display: block;
 }
 /* Change the color of links on hover */
-.navbar a:hover {
+#navbar a:hover {
   background-color: #7FA650; /*hover colour matches accent colour formatting of page*/
   color: black; 
   font-family: 'Syne Mono', monospace; /*changes font style hovering */
+  align-content: center;
  }
- /* Add a color to the active/current link */
-.navbar a.active {
-	color: white; /*to distinguish active page. White used as accent colours already active in rest of the links */
-}
+
+
+/* Style the header */
+header.A {
+	background-color: #777; /*For browsers that do not support gradients */
+	background-image: linear-gradient(to bottom right, rgba(94, 94, 94, 0),rgb(29, 29, 29, 1)); /*w3schools - css gradients */
+	padding: 15px; /*space formatting */ 
+	border-radius: 5px; /*border shaping of header*/ 
+	border: 1px solid black; /*basic formatting*/ 
+	text-align: center; /*center-align the header text*/ 
+	margin: 20px; /*space formatting */
+	margin-top: 30px;
+	border: 2.5mm ridge rgba(238, 120, 3, 0.3) 
+  }
+
 /* Menus/Navigation bars End*/
 /*<!--Menus/Navigation bars Option End -->*/
 /***********************EXTERNAL LINK STYLING**********************/
@@ -173,7 +191,7 @@ div.main  {
 	max-width:900px;
 	background-color: rgb(51, 48, 48);
 	border-radius: 15px; /*border shaping of header*/ 
-	border: 3px solid black; /*basic formatting*/ 
+	border: 1.5mm ridge rgba(29, 28, 27, 0.6) 
 }
 
 div.main2  {
@@ -248,16 +266,7 @@ severe issues with scaling down. If screen scales down, the sections cascade*/
 * {
   box-sizing: border-box; /**w3schools, see layout section at bottom*/
 }
-/* Style the header */
-header.A {
-  background-color: #777; /*For browsers that do not support gradients */
-  background-image: linear-gradient(to bottom right, rgba(94, 94, 94, 0),rgb(29, 29, 29, 1)); /*w3schools - css gradients */
-  padding: 15px; /*space formatting */ 
-  border-radius: 5px; /*border shaping of header*/ 
-  border: 1px solid black; /*basic formatting*/ 
-  text-align: center; /*center-align the header text*/ 
-  margin: 20px; /*space formatting */
-}
+
 /* Container for flexboxes */
 section {
   display: -webkit-flex;  /*not changed from source */
