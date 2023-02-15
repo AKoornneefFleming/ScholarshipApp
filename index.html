@@ -17,11 +17,11 @@
 <div id = "navbar">  
     <a class = "active" href="index.html">Home</a> <!--Define which link is the active for additional styling -->
     <a href = "#database">Databases</a>
-    <a href = "#web_dev">Web Devolopment & Maps</a>
+    <a href = "#cartography">Cartography / Geovizualization</a>
     <a href = "#programming">Programing</a>
     <a href = "#spatial">Spatial Analysis</a>
-    <a href = "#cartography">Cartography / Geovizualization</a>
     <a href = "#remote_sense">Remote Sensing</a>
+    <a href = "#web_dev">Web Devolopment & Maps</a>
 </div>
 
 <!-- HEADER -->
@@ -37,42 +37,55 @@
             <!-- BIO -->
             <p><img class = "Profile" src="AKprofile182x203.jpg" alt="Headshot of Adrian Koornneef"></p>  <!--image set to native resolution Alternative text. CSS applied formatting in external sheet-->
             <h3>Fleming College School Portfolio</h3>
-            <p>Thank you for taking the time to review my application. In 2022 and 2023, I have had the distinguished pleasure of attending Fleming College's 
-                GIS Application Specialist - Online program. The last six months has been a fascinating journey, and I'd like 
-                to take you over some of the hilights.</p>
-            <p>For your consideration, I have built this portfolio to demonstrate some of the skills I have learned and the projects I have worked on. 
-                The application is categorized by the major skills and competencies from the program. Each section includes descriptions and images 
-                demonstrating some of the key projects I completed. Some listed projects will have an indication that they are available for download. 
-                This can be accomplished by accessing the GitHub repository of the website, which is organized in the same fashion.</p>
+                <div class = "just_text">
+                    <p>Thank you for taking the time to review my application. In 2022 and 2023, I have had the distinguished pleasure of attending Fleming College's 
+                        GIS Application Specialist - Online program. The last six months has been a fascinating journey, and I'd like 
+                        to take you over some of the hilights.</p>
+                    <p>For your consideration, I have built this portfolio to demonstrate some of the skills I have learned and the projects I have worked on. 
+                        The application is categorized by the major skills and competencies from the program. Each section includes descriptions and images 
+                        demonstrating some of the key projects I completed. Some listed projects will have an indication that they are available for download. 
+                        This can be accomplished by accessing the GitHub repository of the website, which is organized in the same fashion.</p>
+            </div>
             <ul>
                 <li><a class="ext" href="https://www.chess.com/member/pragmaticnonsense">GitHub Repository</a></li>
             </ul>
         </div>
 
-        <!-- DATABASE -->
+        <!-- #################################### DATABASE ########################################-->
+        <!-- #################################### GEOM65: Database Management ########################################-->
         <p id = "database"></p>
         <div class = "title_section">
             <h3>Database Management</h3>
-            <h4><b>Course name:</b> Database Management</h4>
+            <h4><b>Course name:</b> GIS Database Principles</h4>
+            <img class = "thumbnails" src=".\Database\SQL_sample_300x185.png" alt="Headshot of Adrian Koornneef" width = 300px height = "auto"> 
         </div>
         <div class = "gen_div">
-            <h5>Grade achieved:  </h5>
-            <p>90%</p>
+            <div class = "just_text">
+                <h5>Grade achieved:  </h5>
+                <p>90%</p>
             
-            <h5>Course Competencies:</h5>
-            <p>Demonstrate how to efficiently organize and prepare data for a GIS</p>
-            <p>Create efficient queries to retrieve data in multiple tables</p>
-            <p>Design queries to perform calcualtions and manipulated stored data</p>
-            <p>Transfer data between a database and otehr applications</p>
-            <p>Design a simple conceptual model for a relational database for a given problems</p>
+                <h5>Course Competencies:</h5>
+    
+                <p>● Efficiently organize and prepare data for a GIS</p>
+                <p>● Create efficient queries to retrieve data in multiple tables</p>
+                <p>● Design queries to perform calculations and manipulated stored data</p>
+                <p>● Transfer data between a database and other applications</p>
+                <p>● Design a simple conceptual model for a relational database for a given problems</p>
 
-            <h5>Course Hilights:</h5>
-            <p>Creating an application with Survey 123 and implementing it in field. </p>
-
-            <h5>Project Details:</h5>
-            <p>Design queries to perform calcualtions and manipulated stored data</p>
-            <p>Transfer data between a database and otehr applications</p>
-            <p><b>Team members:</b> Person 1, Person 2, Person 3</p>
+                <h5>Course Hilights:</h5>
+                <p>Creating field surves, testing them in field, and performing ETL load workflows in SQL</p>
+            </div>
+            <div class = "gen_div">
+                <img class = "port_photos" src="./Database/Survey123_600x722.png" alt="Screenshot of Esri Survey Connect 123 form being built" width = 600px height = "auto"> 
+            </div>  
+            <div class = "just_text">
+                <h5>Key Project Details:</h5>
+                <p>● Designed a field survey using Esri Survey 123's Connect and XLSForms, to collect spatial data on trees.</p>
+                <p>● Populated the field survey with data in the local community</p>
+                <p>● Designed a relational database schema in Miccrosoft Access, to store data collected by the class in various formats</p>
+                <p>● Wrote and performed Extract, Transfer, Load (ETL) workflows in SQL to populate the desired database</p>
+                <p><b>Team members:</b> Person 1, Person 2, Person 3</p>
+            </div>
         </div>
         <div class = "gen_div">
             <ul>
@@ -80,101 +93,92 @@
             </ul>
         </div>
         <div class = "gen_div">
-            <img class = "port_photos" src="SamplePic850x403.png" alt="Headshot of Adrian Koornneef" width = 850px height = "auto"> 
+            <img class = "port_photos" src="./Database/relationship_database800x437.png" alt="Image of relational database design" width = 800px height = "auto"> 
         </div>   
 
-        <div class = "gen_div">
-            <h5>Grade achieved:  </h5>
-            <p>90%</p>
-            
-            <h5>Course Competencies:</h5>
-            <p>Demonstrate how to efficiently organize and prepare data for a GIS</p>
-            <p>Create efficient queries to retrieve data in multiple tables</p>
-            <p>Design queries to perform calcualtions and manipulated stored data</p>
-            <p>Transfer data between a database and otehr applications</p>
-            <p>Design a simple conceptual model for a relational database for a given problems</p>
-
-            <h5>Course Hilights:</h5>
-            <p>Creating an application with Survey 123 and implementing it in field. </p>
-
-            <h5>Project Details:</h5>
-            <p>Design queries to perform calcualtions and manipulated stored data</p>
-            <p>Transfer data between a database and otehr applications</p>
-            <p><b>Team members:</b> Person 1, Person 2, Person 3</p>
-        </div>
-        <div class = "gen_div">
-            <ul>
-                <li><a class="ext" href="https://www.chess.com/member/pragmaticnonsense">GitHub Repository</a></li>
-            </ul>
-        </div>
-        <div class = "gen_div">
-            <img class = "port_photos" src="SamplePic850x403.png" alt="Headshot of Adrian Koornneef" width = 850px height = "auto">  
-        </div>   
-
-
-        <!-- WEBSITE -->
-        <p id = "web_dev"></p>
+        <!-- #################################### GEOM70: GIS Database Development ########################################-->        
         <div class = "title_section">
-            <h3>Website Development / Web Maps</h3>
-            <h4><b>Course name:</b> Website Design</h4>
+            <h4><b>Course name:</b> GIS Database Development</h4>
+            <img class = "thumbnails" src=".\Database\Arcade_ExpressionBuilder_300x412.png" alt="Screenshot using Expression Builder in ArcGIS Pro" width = 300px height = "auto"> 
         </div>
         <div class = "gen_div">
-            <h5>Grade achieved:  </h5>
-            <p>90%</p>
+            <div class = "just_text">
+                <h5>Grade achieved:  </h5>
+                <p>IN PROGRESS</p>
             
-            <h5>Course Competencies:</h5>
-            <p>Demonstrate how to efficiently organize and prepare data for a GIS</p>
-            <p>Create efficient queries to retrieve data in multiple tables</p>
-            <p>Design queries to perform calcualtions and manipulated stored data</p>
-            <p>Transfer data between a database and otehr applications</p>
-            <p>Design a simple conceptual model for a relational database for a given problems</p>
+                <h5>Course Competencies:</h5>
+    
+                <p>● Implement, test and enhance a database design</p>
+                <p>● Ensure dtabase integrity through various data validation techniques</p>
+                <p>● Use software to translate data between different database formats</p>
+                <p>● Determine domains, subtypes and relationships for spatial data</p>
+                <p>● Use examples to explain the benefits of the Object Relational Data Model</p>
+                <p>● Develop workflows that allow multiple simultaneous editors to work with the same data</p>
+                <p>● Use examples to explain the benefits of the Object Relational Data Model</p>
+                <p>● Investigate and understand technologies available for replication and archiving of spatial data</p>
 
-            <h5>Course Hilights:</h5>
-            <p>Creating an application with Survey 123 and implementing it in field. </p>
+                <h5>Course Hilights:</h5>
+                <p>Performing Extract Transform Load (ETL) of Esri data using FME Workbench</p>
+            </div>
+            <div class = "gen_div">
+                <img class = "port_photos" src="./Database/FME_sample_800x468.png" alt="Screenshot using FME Workbench" width = 800px height = "auto"> 
+            </div>  
+            <div class = "just_text">
+                <h5>Key Project Details:</h5>
+                <p>IN PROGRESS</p>
+            </div>
+        </div>
+        <!-- <div class = "gen_div">
+            <ul>
+                <li><a class="ext" href="https://www.chess.com/member/pragmaticnonsense">GitHub Repository</a></li>
+            </ul>
+        </div> -->
+ 
+        <!-- #################################### DATABASE ########################################-->
+        <!-- #################################### GEOM102: GEOVISUALIZATION ########################################-->
+        <p id = "cartography"></p>
+        <div class = "title_section">
+            <h3>Cartography / Geovisualization</h3>
+            <h4><b>Course name:</b> Geovisualization</h4>
+            <img class = "thumbnails" src=".\Cartography\ArcGIS_Pro_Color_Editor_450x256.jpg" alt="Screenshot of color editor usign ArcGIS Pro" width = 450px height = "auto"> 
+        </div>
+        <div class = "gen_div">
+            <div class = "just_text">
+                <h5>Grade achieved:  </h5>
+                <p>94%</p>
+            
+                <h5>Course Competencies:</h5>
+    
+                <p>● Describe and apply fundamental techniques used to retain a high degree of positional and attribute accuracy while capturing, structuring
+                    and displaying geographic data</p>
+                <p>● Procure, interpret, transform, and integrate data from various sources, to create cartographic products</p>
+                <p>● Create maps and visual displays based on recognized cartographic design principles that communicate geographic information effectrively at a variety of scales</p>
+                <p>● Proficiently employ industry standard software packages (i.e. ArcGIS Pro, Avenza Map Publisher, Adobe Illustrator)</p>
+                <p>● Describe how cartogrpahic skills are being used to support decision making processes in government, commercial, consulting, and other organizations.</p>
 
-            <h5>Project Details:</h5>
-            <p>Design queries to perform calcualtions and manipulated stored data</p>
-            <p>Transfer data between a database and otehr applications</p>
-            <p><b>Team members:</b> Person 1, Person 2, Person 3</p>
+
+                <h5>Course Hilights:</h5>
+                <p>For this course I focused my technical labs on the city of Whitehorse, Yukon; my favourite product being a 1:50,000 topographic map. I was 
+                    also thrilled with the output of my final project, in which I produced a 1:5,000 scale map illustrating the affect of structures damaged in Goma, DRC., by the 
+                    Mt. Nyrigagongo erruption in 2021.</p>
+            </div>
+            <!-- <div class = "gen_div">
+                <img class = "port_photos" src="./Database/Survey123_600x722.png" alt="Screenshot of Esri Survey Connect 123 form being built" width = 600px height = "auto"> 
+            </div>   -->
+            <div class = "just_text">
+                <h5>Key Project Details:</h5>
+                <p>● </p>
+                <p>● </p>
+                <p>● </p>
+                <p>● </p>
+                <p>● </p>
+            </div>
         </div>
         <div class = "gen_div">
             <ul>
                 <li><a class="ext" href="https://www.chess.com/member/pragmaticnonsense">GitHub Repository</a></li>
             </ul>
-        </div>
+        <!-- </div>
         <div class = "gen_div">
-            <img class = "port_photos" src="SamplePic850x403.png" alt="Headshot of Adrian Koornneef" width = 850px height = "auto"> 
-        </div>   
-
-        <div class = "gen_div">
-            <h4><b>Course name:</b> Web Maps</h4>
-            <h5>Grade achieved:  </h5>
-            <p>90%</p>
-            
-            <h5>Course Competencies:</h5>
-            <p>Demonstrate how to efficiently organize and prepare data for a GIS</p>
-            <p>Create efficient queries to retrieve data in multiple tables</p>
-            <p>Design queries to perform calcualtions and manipulated stored data</p>
-            <p>Transfer data between a database and otehr applications</p>
-            <p>Design a simple conceptual model for a relational database for a given problems</p>
-
-            <h5>Course Hilights:</h5>
-            <p>Creating an application with Survey 123 and implementing it in field. </p>
-
-            <h5>Project Details:</h5>
-            <p>Design queries to perform calcualtions and manipulated stored data</p>
-            <p>Transfer data between a database and otehr applications</p>
-            <p><b>Team members:</b> Person 1, Person 2, Person 3</p>
-        </div>
-        <div class = "gen_div">
-            <ul>
-                <li><a class="ext" href="https://www.chess.com/member/pragmaticnonsense">GitHub Repository</a></li>
-            </ul>
-        </div>
-        <div class = "gen_div">
-            <img class = "port_photos" src="SamplePic850x403.png" alt="Headshot of Adrian Koornneef" width = 850px height = "auto">  
-        </div>   
-    </div>
-</div>
-</body>
-</html>
+            <img class = "port_photos" src="./Database/relationship_database800x437.png" alt="Image of relational database design" width = 800px height = "auto"> 
+        </div>    -->

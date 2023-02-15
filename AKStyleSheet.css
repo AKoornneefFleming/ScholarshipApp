@@ -47,10 +47,10 @@ h4 {
 	text-shadow: 2px 2px black;
 }
 
-/*Smaller White -- Section Sub Headers */
+/*Smaller gold -- Section Sub Headers */
 h5 {
 	font-size: 20px; 
-	color: white;
+	color: #F2A74F;
     font-weight: 750;
     font-family: 'Syne Mono', monospace;
 	text-shadow: 2px 2px black;
@@ -90,6 +90,12 @@ div.main  {
 div.gen_div  {
 	margin: 5px;
 	padding: 5px;
+}
+
+div.just_text {
+	text-align: justify;
+	padding-left: 15px;
+	padding-right: 15px;
 }
 
 div.title_section  {
@@ -195,6 +201,15 @@ img.Profile {
 	margin-left: 25px; 
 	margin-right: 10px; 
 }
+
+img.thumbnails {
+	max-width: 100%;
+	border-radius: 25px; 
+	border: 3px solid black; 
+	margin-left: 25px; 
+	margin-right: 10px; 
+}
+
 /*image class that represent smaller versions of images in image gallery .*/
 img.port_photos {
 	border-radius: 25px; 
