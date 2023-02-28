@@ -14,6 +14,7 @@
 
 <body>
 <!-- NAVBAR -->
+<!-- Inspired by W3 schools -->
 <div id = "navbar">  
     <a class = "active" href="index.html">Home</a> 
     <a href = "#database">Databases</a>
@@ -36,14 +37,18 @@
     <div class = "main"> <!--References CSS class created for this page. Similar to other page, left for semantic / organization / flexibility for changes*/-->
         <div class = "gen_div">
             <!-- BIO -->
-            <p><img class = "Profile" src=".\Images\AKprofile182x203.jpg" alt="Headshot of Adrian Koornneef"></p>  <!--image set to native resolution Alternative text. CSS applied formatting in external sheet-->
+            <p><img class = "Profile" src=".\Images\AKprofile182x203.jpg" alt="Headshot of Adrian Koornneef"></p>  
             <h3>Fleming College School Portfolio</h3>
                 <div class = "just_text">
-                    <p> Since September 2022, I have had the distinguished pleasure of attending Fleming College's 
+                    <p> Thank you for taking the time to review my internal application for Fleming's winter 2023 nomination, to represent the school's submission for the Esri Canada 
+                        GIS Scholarship Award. Since September 2022, I have had the distinguished pleasure of attending Fleming College's 
                         GIS Application Specialist program. Please enjoy this portfolio that highlights the involved courses, core competencies, key projects and my favourite moments. </p>
                     <p> The portfolio is categorized by the major program categories. Each section includes course names and core competencies. The core competencies come directly form
                         course outlines, but are condensed in some cases. Some listed projects will include a link to a GitHub Repository section where a version is available for download. 
                     <p> Special thanks to ESRI and ESRI Canada, as a significant portion of this was made possible by the ArcGIS Esri Suite, including ArcGIS Pro and ArcGIS online.</p>
+                    <p> An additional thanks to all the to the various team members that worked with me on some of these portfolio items. I had the opportunity to work with Some
+                        gifted and wonderful people. I will be seeking their permission to include their names/credits where applicable within this portfolio 
+                    </p>
             </div>
             <ul>
                 <li><a class="ext" href="https://github.com/AKoornneefFleming/ScholarshipApp">GitHub Repository</a></li>
@@ -52,17 +57,24 @@
 
         <!-- #################################### DATABASE ########################################-->
         <!-- #################################### GEOM65: Database Management ########################################-->
+        <!-- #Template: Required at the beginning of each section for links #-->
         <p id = "database"></p>
+        <!-- #Template: Any title that will be centered and not justified should be in this div class  #-->
         <div class = "title_section">
             <h3>DATABASE MANAGEMENT</h3>
             <h4>GIS DATABASE PRINCIPLES</h4>
+            <!-- #Template: Thumbnail images are optional after the course headers. Width should be set
+            to the width of the actual photo (always included in naming convention, and height set to auto)  #-->
             <img class = "thumbnails" src=".\Images\SQL_sample_300x185.png" alt="Headshot of Adrian Koornneef" width = 300px height = "auto"> 
         </div>
         <div class = "gen_div">
+            <!-- #Template: justified text div class, majority of text should be in these classes  #-->
             <div class = "just_text">
+                 <!-- #Template: Section Header  #-->
                 <h5>Grade achieved:  </h5>
                 <p>90%</p>
-            
+                
+                 <!-- #Template: Section Course Competencies  #-->
                 <h5>Course Competencies:</h5>
     
                 <p>● Efficiently organize and prepare data for a GIS</p>
@@ -71,27 +83,32 @@
                 <p>● Transfer data between a database and other applications</p>
                 <p>● Design a simple conceptual model for a relational database for a given problems</p>
 
+                <!-- #Template: Section Course Highlights  #-->
                 <h5>Course Highlights:</h5>
                 <p>Creating field surveys, testing them in field, and performing ETL load workflows in SQL. Putting together the puzzle pieces of a relational database
                     is always a rewarding experience, but connecting the collection of survey data infield, to the output database, added an interesting dimension.  
                 <p>This course was also my first introduction to the Structured Query Language (SQL), which has become a skill that continues to pay dividends. </p>
             </div>
 
+            <!-- #Template: Section Course Highlights  #-->
             <div class = "just_text">
                 <h5>Key Project Details:</h5>
                 <p>● Designed a field survey using ArcGIS Survey 123, to collect survey data on tree species, health and location.</p>
                 <p>● Used the survey to collet data within the local community</p>
                 <p>● Designed a relational database schema in Microsoft Access, to store data collected by the class in various formats</p>
                 <p>● Wrote and performed Extract, Transfer, Load (ETL) workflows using SQL to populate the desired database</p>
-                <p>● <b>Number of team members:</b> 4 (names available upon request for faculty)</p>
+                <p>● <b>Number of team members:</b> 4 </p>
             </div>
         </div>
+         <!-- #Template: External links should be in the general div class to manage spacing and allow for centering  #-->
         <div class = "gen_div">
             <ul>
-                <li><a class="ext" href="https://www.chess.com/member/pragmaticnonsense">GitHub Repository</a></li>
+                <li><a class="ext" href="https://github.com/AKoornneefFleming/ScholarshipApp/tree/main/Database">GitHub Repository</a></li>
             </ul>
         </div>
 
+        <!-- #Template: Portfolio images should be in a general div class, and either the port_photos or port_photos_no_div image class. Width should be set
+            to the width of the actual photo (always included in naming convention, and height set to auto)  #-->
         <div class = "gen_div">
             <img class = "port_photos" src="./Images/relationship_database800x437.png" alt="Image of relational database design" width = 800px height = "auto"> 
         </div>   
@@ -123,9 +140,11 @@
                     which organizations have implemented these into their datasets.</p>
                 
             </div>
+
             <div class = "gen_div">
                 <img class = "port_photos" src="./Images/FME_sample_800x468.png" alt="Screenshot using FME Workbench" width = 800px height = "auto"> 
             </div>  
+
             <div class = "just_text">
                 <h5>Key Project Details:</h5>
                 <p>This course is still in progress, key project updates coming soon!</p>
