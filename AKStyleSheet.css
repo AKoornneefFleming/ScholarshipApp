@@ -24,7 +24,7 @@ h2 {
 	font-size: 32px; 
 	color: white;
 	text-align: center;
-    font-weight: 400;
+    font-weight: 800;
     font-family: 'Merienda', cursive;
 	text-shadow: 2px 2px black;
 }
@@ -40,11 +40,11 @@ h3 {
 
 /*Smaller White -- Course Names */
 h4 {
-	font-size: 22px; 
+	font-size: 23px; 
 	color: white;
-    font-weight: 500;
-    font-family: 'Merienda', cursive;
-	text-shadow: 2px 2px black;
+    font-weight: 750;
+    font-family: 'Syne Mono', monospace;
+	text-shadow: 2px 2px #4B028C;
 }
 
 /*Smaller gold -- Section Sub Headers */
@@ -59,7 +59,7 @@ h5 {
 * p {
 	color: white;
     font-family: 'Syne Mono', monospace;
-	text-shadow: 2px 2px black;
+	text-shadow: 1px 1px black;
 }
 
 
