@@ -58,8 +58,9 @@ h5 {
 
 * p {
 	color: white;
-    font-family: 'Syne Mono', monospace;
+    font-family: 'Avenir Next LT Pro', sans-serif;
 	text-shadow: 1px 1px black;
+	font-size: 18px;
 }
 
 

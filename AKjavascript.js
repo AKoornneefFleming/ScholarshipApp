@@ -1,7 +1,7 @@
        
 // Javascript from w3 schools
 // https://www.w3schools.com/howto/tryit.asp?filename=tryhow_js_navbar_slide
-// When the user scrolls down 20px from the top of the document, slide down the navbar 
+// When the user scrolls down a designated distance from the top of the document, slide down the navbar 
 
 window.onscroll = function() {scrollFunction()};
 
